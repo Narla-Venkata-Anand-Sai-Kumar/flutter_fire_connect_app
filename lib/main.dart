@@ -38,10 +38,12 @@ class FirstScreen extends StatelessWidget {
           ),
           title: Container(
               alignment: Alignment.center,
-              child:
-                  const Text('Login Successful', style: TextStyle(fontSize: 20.0))),
+              child: const Text('Login Successful',
+                  style: TextStyle(fontSize: 20.0))),
           actions: <Widget>[
-            const Divider(thickness: 3,),
+            const Divider(
+              thickness: 3,
+            ),
             GestureDetector(
               onTap: () {
                 Navigator.pop(context);
@@ -49,7 +51,9 @@ class FirstScreen extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.center,
-                child: Text("OK!..",style: TextStyle(color: Colors.blue.shade400,fontSize: 20)),
+                child: Text("OK!..",
+                    style:
+                        TextStyle(color: Colors.blue.shade400, fontSize: 20)),
               ),
             )
           ],
